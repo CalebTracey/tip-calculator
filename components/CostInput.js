@@ -7,8 +7,8 @@ const CostInput = ({ billAmount, onChange }) => {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          clearButtonMode="always"
-          clearTextOnFocus="true"
+          clearButtonMode="while-editing"
+          clearTextOnFocus={true}
           keyboardAppearance="dark"
           returnKeyType="done"
           keyboardType="decimal-pad"

@@ -5,7 +5,7 @@ import IncreaseButton from "./IncreaseButton";
 import DecreaseButton from "./DecreaseButton";
 import MaxDisplay from "./MaxDisplay";
 
-const TipRange = ({ min, max, setMin, setMax }) => {
+const TipRange = ({ max, setMax }) => {
   return (
     <View style={styles.container}>
       <View style={styles.button}>
@@ -27,18 +27,15 @@ export default TipRange;
 
 const styles = StyleSheet.create({
   container: {
-    width: "80%",
-    margin: 20,
     flexDirection: "row",
   },
   textContainer: {
+    width: 175,
+    alignItems: "center",
     justifyContent: "center",
-    alignContent: "center",
-    flexDirection: "row",
     backgroundColor: "yellow",
-    borderRadius: 20,
+    borderRadius: 100,
     padding: 10,
   },
-  button: { margin: 10 },
-  text: { fontSize: 20, marginTop: 20 },
+  text: { fontSize: 20 },
 });

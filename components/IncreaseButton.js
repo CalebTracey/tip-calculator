@@ -25,9 +25,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   container: {
+    marginLeft: 10,
     color: "black",
     backgroundColor: "yellow",
-    borderRadius: 50,
-    textAlign: "center",
+    borderRadius: 100,
   },
 });

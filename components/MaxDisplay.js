@@ -11,8 +11,5 @@ const styles = StyleSheet.create({
     color: "black",
     backgroundColor: "yellow",
     fontSize: 20,
-    borderRadius: 50,
-    flex: 1,
-    textAlign: "center",
   },
 });

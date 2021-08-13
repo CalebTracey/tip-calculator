@@ -13,7 +13,7 @@ const TipCalculator = () => {
   const [max, setMax] = useState(40);
 
   useEffect(() => {
-    if (billAmount) {
+    if (billAmount !== "Enter Bill Amount") {
       setBillValue(parseFloat(billAmount).toFixed(2));
       setTipValue(billAmount * (tipAmount / 100));
     }
@@ -52,11 +52,11 @@ const TipCalculator = () => {
           max={max}
         />
       </View>
-      <View>
-        <TipRange min={min} max={max} setMin={setMin} setMax={setMax} />
-      </View>
       <View style={styles.costInput}>
         <CostInput billAmount={billAmount} onChange={onChange} />
+      </View>
+      <View style={styles.tipRange}>
+        <TipRange min={min} max={max} setMin={setMin} setMax={setMax} />
       </View>
     </View>
   );
@@ -93,7 +93,10 @@ const styles = StyleSheet.create({
   tipForm: {
     flex: 2,
   },
+  tipRange: {
+    flex: 2,
+  },
   costInput: {
-    flex: 4,
+    flex: 2,
   },
 });
